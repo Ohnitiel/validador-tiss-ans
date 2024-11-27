@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANS TISS XML Validator</title>
+    <link rel="stylesheet" href="./styles/default.css">
+</head>
+
+<body>
+    <h1>Validador XML</h1>
+
+    <!-- File upload area -->
+    <div id="drop-area" ondrop="handleFileDrop(event)" ondragover="event.preventDefault()">
+        <p>Arraste e solte o arquivo aqui ou
+            <label for="file-input" style="color: blue; text-decoration: underline; cursor: pointer;">selecione</label>
+        </p>
+        <input type="file" id="file-input" accept=".xml" onchange="handleFileSelect(event)">
+    </div>
+
+    <label for="version-select">Versão do XML:</label>
+    <select id="version-select">
+        <option value="">Identificar</option>
+    </select>
+
+    <div id="result"></div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+}
+
+#file-input {
+    display: none;
+}
+
+#result {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
